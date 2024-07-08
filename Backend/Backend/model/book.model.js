@@ -8,5 +8,5 @@ const bookSchema = mongoose.Schema({
     title: String,
 });
 const Book = mongoose.model("Book", bookSchema);
-
+// all the schema data will be stored in Book
 export default Book;

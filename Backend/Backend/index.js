@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+// env 
 import cors from "cors";
 
 import bookRoute from "./route/book.route.js";
@@ -21,7 +22,8 @@ try {
     mongoose.connect(URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    });
+        // we only add the above 2 statements because we are using mongodb locally installed and not mongodb cloud 
+    }); 
     console.log("Connected to mongoDB");
 } catch (error) {
     console.log("Error: ", error);

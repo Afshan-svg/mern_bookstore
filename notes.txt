@@ -70,3 +70,21 @@ Now we use react hook forms for submit validation and control our forms
 React hook forms include all validation and required fields that are needed in any form
 
 VERSION CONTROL 
+BACKEND 
+
+The port information is sensitive so we write it in env file
+We write type module in json file so that we can use import statement syntax in our express 
+
+13. book.model.js
+In this we store the schema of our database which we will store in our mongodb
+
+const bookSchema = mongoose.Schema({
+    name: String,
+    price: Number,
+    category: String,
+    image: String,
+    title: String,
+});
+
+14. book.controller.js
+We add get request in this file

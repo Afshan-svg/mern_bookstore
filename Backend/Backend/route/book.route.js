@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.get("/", getBook);
 
+// Express will call the getBook function imported from book.controller.js
+
 export default router;
