@@ -8,14 +8,14 @@ function Logout() {
     try {
       setAuthUser({
         ...authUser,
+        // credentials will be saved though
         user: null,
       });
       localStorage.removeItem("Users");
+      // remove from local storage as well
       toast.success("Logout successfully");
 
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
+        
     } catch (error) {
       toast.error("Error: " + error);
       setTimeout(() => {}, 2000);

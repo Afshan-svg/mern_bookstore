@@ -20,6 +20,7 @@ function Signup() {
       email: data.email,
       password: data.password,
     };
+    // to get the data from the user
     await axios
       .post("http://localhost:4001/user/signup", userInfo)
       .then((res) => {

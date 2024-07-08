@@ -8,7 +8,7 @@ function Navbar() {
   const [authUser, setAuthUser] = useAuth();
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  );
+  ); 
   const element = document.documentElement;
   useEffect(() => {
     if (theme === "dark") {

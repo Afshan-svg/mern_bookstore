@@ -88,3 +88,21 @@ const bookSchema = mongoose.Schema({
 
 14. book.controller.js
 We add get request in this file
+
+Tested the api using postman and it was working fine 
+
+We define function in controller
+
+Promises in js is either accepted or rejected
+
+15. AuthContext
+It will enable that if the user is AuthUser only then show him the books section
+Else use "Navigate" to take to signup page
+
+16. Logout
+ setTimeout(() => {
+        window.location.reload();
+        // automatic reloads after logout
+      }, 3000);
+
+useLocation react router dom
